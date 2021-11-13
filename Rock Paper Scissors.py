@@ -2,40 +2,40 @@ from random import randint
 
 choices = ["Rock", "Paper", "Scissors"]
 
-bot = choices[randint(0,2)]
+computer_choice = choices[randint(0,2)]
 
-player = input("Rock, Paper, Scissors? ")
+player_choice = input("Rock, Paper, Scissors? ")
 
-if player == bot:
-    print("Bot choice: ", bot)
-    print("Your choice: ", player)
+if player_choice == computer_choice:
+    print("Bot choice: ", computer_choice)
+    print("Your choice: ", player_choice)
     print("Result: Tie!")
-elif player == "Rock":
-    if bot == "Paper":
-        print("Bot choice: ", bot)
-        print("Your choice: ", player)
+elif player_choice == "Rock":
+    if computer_choice == "Paper":
+        print("Bot choice: ", computer_choice)
+        print("Your choice: ", player_choice)
         print("Result: You lose!")
     else:
-        print("Bot choice: ", bot)
-        print("Your choice: ", player)
+        print("Bot choice: ", computer_choice)
+        print("Your choice: ", player_choice)
         print("Result: You win!")
-elif player == "Paper":
-    if bot == "Scissors":
-        print("Bot choice: ", bot)
-        print("Your choice: ", player)
+elif player_choice == "Paper":
+    if computer_choice == "Scissors":
+        print("Bot choice: ", computer_choice)
+        print("Your choice: ", player_choice)
         print("Result: You lose!")
     else:
-        print("Bot choice: ", bot)
-        print("Your choice: ", player)
+        print("Bot choice: ", computer_choice)
+        print("Your choice: ", player_choice)
         print("Result: You win!")
-elif player == "Scissors":
-    if bot == "Rock":
-        print("Bot choice: ", bot)
-        print("Your choice: ", player)
+elif player_choice == "Scissors":
+    if computer_choice == "Rock":
+        print("Bot choice: ", computer_choice)
+        print("Your choice: ", player_choice)
         print("Result: You lose!")
     else:
-        print("Bot choice: ", bot)
-        print("Your choice: ", player)
+        print("Bot choice: ", computer_choice)
+        print("Your choice: ", player_choice)
         print("Result: You win!")
 else:
     print("The choice is not valid!")
